@@ -1,0 +1,19 @@
+# Commands and Shortcuts in Terminal (Windows)
+- `exit`         Close terminal and quit program.
+- `dir`          Show directory files.
+- `dir *.txt`    List all .txt files in current directory.
+- `mkdir`        Create a new directory (new folder inside current folder).
+- `cd + folder name`  Go down to that directory.
+- `cd..`         Go up one directory.
+- `cd\`          Go to the root of that drive.
+- `cls`          Clear screen.
+- `ctrl + c`     "Kill the server" terminate batch job.
+- `node + first few letters + tab` Brings up that filename (press enter to run).
+- `node`         By itself brings you into "javascript world" like broswer console.
+- `.exit`        Get out of JavaScript world.
+- `del`          Deletes files or folders (ex. `del *.*` all files in dir)
+- `filename.txt` Opens filename.txt in current directory in Notepad
+- `ls`           Shows which directory I'm in
+- `up arrow`     Shows previous commands I typed in (scroll through to easily redo a command)
+- `jasmine-node` Run node in Jasmine
+- `touch filename.js` Create a new file
