@@ -1,5 +1,6 @@
 JENN'S NOTES
 
+- Atom commands
 - GitHub
 - Mongo Server
 - Postman
