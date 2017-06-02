@@ -6,7 +6,7 @@
 
 ## BOOTSTRAP
 - cd into client, `npm install --save bootstrap`
-- require it in the main index.js (the file that is the react brains)
+- require it in the main index.js (the file that is the react brains - probably in src)
 - `require('bootstrap/dist/css/bootstrap.css');`
 - If that didn't work, add this to public/index.html  `<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">`
 

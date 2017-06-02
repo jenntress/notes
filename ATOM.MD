@@ -20,6 +20,7 @@ Keyboard shortcuts for the Atom editor (Windows keys)
 * `CTRL + DELETE` - delete to end of word
 * `CTRL + SHIFT + ENTER` - add empty line before current line and switch to it
 * `CTRL + ENTER` - add empty line after current line and switch to it
+* `ALT + F3` - select and replace each instance of the selected word
 
 ## Find / Replace
 * `CTRL + ALT + /` - toggle Use Regex

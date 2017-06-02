@@ -15,7 +15,7 @@
 - `npm install` creates node-modules folder with packages we want to install plus their specific dependencies
 - `--save` saves properties to the dependencies in package.json
 - `--save-dev` saves as dev dependencies which are required to run the app, but also required to develop/build the app.
-- `git clone + URL` Copy someone else's project to your hard drive. You can add a different file name after the URL if you want to put it in a differently named folder.
+- `git clone + URL` Copy someone else's project to your hard drive. You can add a different file name after the URL ` newname` if you want to put it in a differently named folder.
 
 ## Create a New Repository
 1. Make a new repository on GitHub (copy the URL)
