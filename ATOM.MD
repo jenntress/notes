@@ -25,3 +25,4 @@ Keyboard shortcuts for the Atom editor (Windows keys)
 ## Find / Replace
 * `CTRL + ALT + /` - toggle Use Regex
 * `CTRL + ENTER` - Replace All
+* `CTRL + SHIFT + f` - Find across ALL files

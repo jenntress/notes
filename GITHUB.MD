@@ -1,9 +1,19 @@
 # GIT HUB NOTES
 
-## Save Existing Project
+## Save Existing Project (master)
 1. `git add -A` Preparing to save changes made to ALL files
 2. `git commit –m “description of changes` Add message to your commit, be specific about changes I made.
-3. `git push origin master` Pushes changes to the cloud – saves in GitHub
+4. `git push origin master` Pushes changes to the cloud – saves in GitHub
+
+## GitHub Branching
+1. `git checkout -b NameofNewBranch` Create a branch.
+2. `git branch` Get into new branch.
+3. Make changes to files, then
+4. `git add -A`
+5. `git commit -m "some msg"`
+6. `git push origin NameofNewBranch` Push files to this branch.
+7. Go to github, click green buttons.
+8. `git checkout master`
 
 ## Other Commands
 - `git status` Shows what’s been synched
@@ -32,15 +42,5 @@
 
 ## Undo Mistakes
 - `git remote rm + name-of-wrong-command` When Cody spelled "origin" wrong we need to remove it
-- `git remote remove origin` When Katie Katie saved her new repository to the wrong location.
+- `git remote remove origin` When Katie saved her new repository to the wrong location.
 - `git remote add origin + URL` This changes the place (URL/origin) of where to save/push.
-
-## GitHub Branching
-- Create a branch and get into it. `git checkout -b articles` - note that "articles" is the name of the new branch.
-- Make changes to files, then
- - `git add -A`
- - `git commit -m "some msg"`
- - `git push origin articles` -> Note you pushed to your new branch
- - `git checkout master`
- - `git merge articles` -> brings your new code into articles
- - `git push origin master` -> sync your master branch with new code

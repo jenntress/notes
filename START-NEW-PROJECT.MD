@@ -9,11 +9,23 @@
 - require it in the main index.js (the file that is the react brains - probably in src)
 - `require('bootstrap/dist/css/bootstrap.css');`
 - If that didn't work, add this to public/index.html  `<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">`
+- ALSO!!!! Add MY CSS `require('./App.css');` to the main index.js after bootstrap.
 
 ## IGNORE NODE MODULES
 - cd into main directory, `echo node_modules/ >> .gitignore`
 - (success is seeing a new blank file in directory)
 - ignore .env because it stores API keys (ex.gmail/amazon - users can use their logins - need to keep them private) add ".env" to your .gitignore file
+
+## REACT ICONS
+- `npm install --save react-icons` - Then grab the file path of the icon you want and import it: `import GitHubIcon from 'react-icons/lib/fa/github-square'` Then use it as a normal icon `<GitHubIcon />`
+
+## HEROKU
+- kill all terminal windows (including mongodb) SLEEPING WIT DA FISHIES
+- download and install Heroku CLI
+- open terminal and `heroku --version` "will show current installed version"
+- Documentation: https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up
+- `heroku login` - sign in with email & password (success is loggin in as...)
+- `heroku create + newname of oneline project`
 
 ## FAKER "seed the database"
 Adds generic data to our database. Note that we don't want this script to run every time we start our server. We'll add an envrioment variable that will tell us if we want to seed our data or not. Documentation: https://github.com/Marak/faker.js
