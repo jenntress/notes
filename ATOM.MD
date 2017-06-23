@@ -8,7 +8,8 @@ Keyboard shortcuts for the Atom editor (Windows keys)
 
 ## Selection
 * `CTRL + '` - Select everything inside quotes - https://atom.io/packages/expand-selection-to-quotes
-* `CTRL + d` - Select current word
+* double click word - Select current word
+* `CTRL + d` - Select next instance of selected word (toggle through)
 * `CTRL + l` - Select current line (includes text past the soft wrap)
 
 ## Edit
