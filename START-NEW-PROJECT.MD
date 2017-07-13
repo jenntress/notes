@@ -16,6 +16,12 @@
 - (success is seeing a new blank file in directory)
 - ignore .env because it stores API keys (ex.gmail/amazon - users can use their logins - need to keep them private) add ".env" to your .gitignore file
 
+## GOOGLE FONTS
+- go to https://fonts.google.com/
+- select the fonts you want and view the code for them
+- embed the standard link in client/public/index.html
+- add the CSS font-family to individual component .css OR create an index.css in src folder, add to body, and import in index.js.
+
 ## REACT ICONS
 - `npm install --save react-icons` - Then grab the file path of the icon you want and import it: `import GitHubIcon from 'react-icons/lib/fa/github-square'` Then use it as a normal icon `<GitHubIcon />`
 
@@ -61,4 +67,3 @@ Adds generic data to our database. Note that we don't want this script to run ev
 - We can start our react codebase by changing our directory to client. We cd into there and run npm start.
 - Everything outside of client is our node specific application. This only manages our database and our API endpoints. We can start up this project by just running nodemon server or node server.
 - Each app has its own node modules and package.json
-- This doesn't work yet: ...We're gonna create a command that starts both of our apps at the same time and blends them together a little bit so that it seems like it's only one app running - but remember it's two! To start both apps at once run 'npm run dev' (this command has been created in our node package.json)...

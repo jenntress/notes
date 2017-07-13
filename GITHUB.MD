@@ -1,19 +1,19 @@
 # GIT HUB NOTES
 
 ## Save Existing Project (master)
-1. `git add -A` Prepacd codring to save changes made to ALL files
+1. `git add -A` Prepare to save changes made to ALL files
 2. `git commit –m “description of changes` Add message to your commit, be specific about changes I made.
 4. `git push origin master` Pushes changes to the cloud – saves in GitHub
 
 ## GitHub Branching
 1. `git checkout -b NameofNewBranch` Create a branch, and get into branch.
 2. Make changes to files, then
-3. `git add -A`
-4. `git commit -m "some msg"`
-5. `git push origin NameofNewBranch` Push files to this branch.
-6. Go to github, click green buttons.
-7. `git checkout master`
-8. `git pull origin master`
+3. `git pull origin master` (optional, but a good idea)
+4. `git add -A`
+5. `git commit -m "some msg"`
+6. `git push origin NameofNewBranch` Push files to this branch.
+7. Go to github, click green buttons.
+8. `git checkout master` (if you want to switch branches)
 
 ## Login to GitHub
 - `git config --global user.name "Your Name Here"` set your user name for commits
@@ -21,6 +21,7 @@
 - `git config --global user.email` check if I'm logged in (success is returning my email address) Note: do the same thing with 'user.name' to check it.
 
 ## Other Commands
+- `git add "client/src/component/Home/Home.js"`add ONE file to push up to github
 - `git status` Shows what’s been synched
 - `git remote -v` check to see if we're connected remotely
 - `git clone + GitHub URL` CHECK CORRECT DIRECTORY! Add someone else's repository to my C:\
@@ -40,14 +41,12 @@
 5. `git remote add origin + URL` ONLY for the first time we set up a project
 6. `git push -u origin master` Push ALL files in this directory to GitHub
 
-## Ignore node_modules
-- cd into main directory, `echo node_modules/ >> .gitignore`
-- (success is seeing a new blank file in directory)
-- ignore .env because it stores API keys (ex.gmail/amazon - users can use their logins - need to keep them private) add ".env" to your .gitignore file
+## Git Ignore
+- `echo node_modules/ >> .gitignore` (success is seeing a new blank file in directory)
 
 ## Undo Mistakes
 - `git remote rm + name-of-wrong-command` When Cody spelled "origin" wrong we need to remove it
 - `git remote remove origin` When Katie saved her new repository to the wrong location.
 - `git remote add origin + URL` This changes the place (URL/origin) of where to save/push.
-- `git stash` put the changes you made locally in the "recycle bin" and go back to your last commit.
+- `git add -A` `git stash` put the changes you made locally in the "recycle bin" and go back to your last commit. (basically just trash these changes)
 - `git fetch origin && git reset --hard origin/master && git clean -f -d` - turn your local repository into a mirror image of the remote master (note that this destroys any local changes in your current branch)
