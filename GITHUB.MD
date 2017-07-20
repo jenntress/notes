@@ -2,7 +2,7 @@
 
 ## Save Existing Project (master)
 1. `git add -A` Prepare to save changes made to ALL files
-2. `git commit –m “description of changes` Add message to your commit, be specific about changes I made.
+2. `git commit –m “description of changes` Add message to your commit
 4. `git push origin master` Pushes changes to the cloud – saves in GitHub
 
 ## GitHub Branching
@@ -21,8 +21,9 @@
 - `git config --global user.email` check if I'm logged in (success is returning my email address) Note: do the same thing with 'user.name' to check it.
 
 ## Other Commands
-- `git add "client/src/component/Home/Home.js"`add ONE file to push up to github
-- `git status` Shows what’s been synched
+- `git add "client/src/component/Home/Home.js"` add ONE file to push up to github
+- `git add -u src` add modified files from the src directory
+- `git status` shows what’s been synched
 - `git remote -v` check to see if we're connected remotely
 - `git clone + GitHub URL` CHECK CORRECT DIRECTORY! Add someone else's repository to my C:\
 - `mongo --version` Check to see if that program is installed on this device
@@ -32,6 +33,12 @@
 - `--save-dev` saves as dev dependencies which are required to run the app, but also required to develop/build the app.
 - `git clone + URL` Copy someone else's project to your hard drive. You can add a different file name after the URL ` newname` if you want to put it in a differently named directory.
 - `git branch` show a dir list of all your branches
+- `npm outdated` list all dependencies and compare versions (show missing)
+- `npm-install-missing` reinstall any missing dependencies
+- `git show --oneline -s` view which commit currently checked out
+- `npm list -g` list which packages you have installed globally
+- `npm list -g NameofDependency`check to see if a specific package is gloally installed
+- `git diff` show changes between commits (brings you into "less" prompt - type `q` to quit)
 
 ## Create a New Repository
 1. Make a new repository on GitHub (copy the URL)
@@ -50,3 +57,7 @@
 - `git remote add origin + URL` This changes the place (URL/origin) of where to save/push.
 - `git add -A` `git stash` put the changes you made locally in the "recycle bin" and go back to your last commit. (basically just trash these changes)
 - `git fetch origin && git reset --hard origin/master && git clean -f -d` - turn your local repository into a mirror image of the remote master (note that this destroys any local changes in your current branch)
+
+## File Locations
+Global npm installs location (Windows 7):
+C:\Users\turnerj\AppData\Roaming\npm\node_modules

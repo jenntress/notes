@@ -1,9 +1,9 @@
 JENN'S NOTES
 
-- Atom commands
+- Atom
 - GitHub
 - Heroku
 - Mongo Server
 - Postman
 - Starting a new React project
-- Terminal commands
+- Console (command line for Windows)
