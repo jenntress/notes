@@ -4,7 +4,7 @@
 1. `git checkout -b NameofNewBranch` Create a branch, and get into branch.
 2. Make changes to files, then
 3. `git pull origin master` (optional, but a good idea)
-4. `git add -A` Stage your changed files.
+4. `git add -u src` Add/stage modified files from the src directory.
 5. `git commit -m "some msg"`
 6. `git push origin NameofNewBranch` Push files to this branch.
 7. Go to github, click green buttons.
@@ -48,14 +48,16 @@
 - `git diff` show changes between commits (brings you into "less" prompt - type `q` to quit)
 - `git branch` show a dir list of all your branches
 - `mongo --version` Check to see if a program (in this case mongo) is installed on this device
+- `npm cache clean` clear cache
 
 ## Undo Mistakes
+- `git add -A` `git stash` put the changes you made locally in the "recycle bin" and go back to your last commit. (basically just trash these changes)
 - `git remote rm + name-of-wrong-command` When Cody spelled "origin" wrong we need to remove it
 - `git remote remove origin` When Katie saved her new repository to the wrong location.
 - `git remote add origin + URL` This changes the place (URL/origin) of where to save/push.
-- `git add -A` `git stash` put the changes you made locally in the "recycle bin" and go back to your last commit. (basically just trash these changes)
 - `git fetch origin && git reset --hard origin/master && git clean -f -d` - turn your local repository into a mirror image of the remote master (note that this destroys any local changes in your current branch)
 - `git reset --soft HEAD~`then `git reset` - Undo latest commit. Removes the latest commit from github and unstages local changes.
+- `npm uninstall -g jshint` remove a global package (in this case jshint)
 
 ## Git Ignore
 - `echo node_modules/ >> .gitignore` (success is seeing a new blank file in directory)
