@@ -25,10 +25,11 @@
 - `mkdir`        Create a new directory (new folder inside current folder).
 
 ## Keyboard Shortcuts
-- *Cmder*              *GitBash*        *Shorcut*
-- CTRL + Shift + V     right-click      Paste text into command line from clipboard.
-- Select then Enter     <-same          Copy output from console.
-- CTRL + t                              Open new console tab.
-- Up Arrow                              Scroll through previous commnands to easily redo.
-- CTRL + Alt + u                        "up" Traverse up in directory structure.
-- Alt + enter                           Fullscreen.
+| *Cmdr*            | *GitBash*   | *Shortcut*                                        |
+|-------------------|-------------|---------------------------------------------------|
+| CTRL + Shift + V  | right-click | Paste text into command line from clipboard.      |
+| Select then Enter | &lt;-same   | Copy output from console.                         |
+| CTRL + t          |             | Open new console tab.                             |
+| Up arrow          |             | Scroll through previous commnands to easily redo. |
+| CTRL + Alt + u    |             | "up" Traverse up in directory structure.          |
+| Alt + enter       |             | Fullscreen.                                       |
