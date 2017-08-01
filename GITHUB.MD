@@ -1,32 +1,19 @@
 # GIT HUB NOTES
 
-## GitHub Branching
-1. `git checkout -b NameofNewBranch` Create a branch, and get into branch.
-2. Make changes to files, then
-3. `git pull origin master` (optional, but a good idea)
-4. `git add -u src` Add/stage modified files from the src directory.
-5. `git commit -m "some msg"`
-6. `git push origin NameofNewBranch` Push files to this branch.
-7. Go to github, click green buttons.
-8. `git checkout master` (if you want to switch branches)
-
-## Create a New Repository
-1. Make a new repository on GitHub (copy the URL)
-2. `git init` CHECK CORRECT DIRECTORY! creates a new Git repository.
-3. `git add -A` Add ALL files to your repository
-4. `git commit -m “first commit”` "m" stands for message
-5. `git remote add origin + URL` ONLY for the first time we set up a project
-6. `git push -u origin master` Push ALL files in this directory to GitHub
-
-## Save Existing Project (master)
-1. `git add -A` Prepare to save changes made to ALL files
-2. `git commit –m “description of changes` Add message to your commit
-4. `git push origin master` Pushes changes to the cloud – saves in GitHub
-
-## Login to GitHub
-- `git config --global user.name "Your Name Here"` set your user name for commits
-- `git config --global user.email "your_email@youremail.com"` set email to 'log in'
-- `git config --global user.email` check if I'm logged in (success is returning my email address) Note: do the same thing with 'user.name' to check it.
+## Work Specifics
+- cd into reactMobile
+- verify branch is current assignment, if not `git checkout -b NameofNewBranch`
+- `git pull origin NameOfBranch`
+- `npm run start-dev`
+- new tab, cd into reactMobile `npm run webpack-dev-browser`
+- Login at S19: http://localhost:3000/WebMobility/SearchPage
+- make changes
+- `git pull origin NameOfBranch` optional, but good idea
+- `git add -u src` OR individual files if only a few
+- `git commit -m "some msg"`
+- `git push origin NameOfBranch`
+- go to github and comment on changes
+- update Jira status
 
 ## Other Commands
 - `git add "client/src/component/Home/Home.js"` add ONE file to push up to github
@@ -38,6 +25,7 @@
 - `git clone + URL` Copy someone else's project to your hard drive. You can add a different file name after the URL ` newname` if you want to put it in a differently named directory.
 
 ## Troubleshooting
+- `npm cache clean` clear cache
 - `git status` shows what’s been synched
 - `git remote -v` check to see if we're connected remotely
 - `npm outdated` list all dependencies and compare versions (show missing)
@@ -48,10 +36,10 @@
 - `git diff` show changes between commits (brings you into "less" prompt - type `q` to quit)
 - `git branch` show a dir list of all your branches
 - `mongo --version` Check to see if a program (in this case mongo) is installed on this device
-- `npm cache clean` clear cache
 
 ## Undo Mistakes
 - `git add -A` `git stash` put the changes you made locally in the "recycle bin" and go back to your last commit. (basically just trash these changes)
+- `git add ...` `git commit --amend` make a change right after you committed (follow propmpts to change or keep the commit message).
 - `git remote rm + name-of-wrong-command` When Cody spelled "origin" wrong we need to remove it
 - `git remote remove origin` When Katie saved her new repository to the wrong location.
 - `git remote add origin + URL` This changes the place (URL/origin) of where to save/push.
@@ -59,9 +47,38 @@
 - `git reset --soft HEAD~`then `git reset` - Undo latest commit. Removes the latest commit from github and unstages local changes.
 - `npm uninstall -g jshint` remove a global package (in this case jshint)
 
+## Save Existing Project (master)
+1. `git add -A` Prepare to save changes made to ALL files
+2. `git commit –m “description of changes` Add message to your commit
+4. `git push origin master` Pushes changes to the cloud – saves in GitHub
+
+## Create a New Repository
+1. Make a new repository on GitHub (copy the URL)
+2. `git init` CHECK CORRECT DIRECTORY! creates a new Git repository.
+3. `git add -A` Add ALL files to your repository
+4. `git commit -m “first commit”` "m" stands for message
+5. `git remote add origin + URL` ONLY for the first time we set up a project
+6. `git push -u origin master` Push ALL files in this directory to GitHub
+
+## GitHub Branching
+- `git branch` List all branches you've ever checked out on this device?
+1. `git checkout -b NameofNewBranch` Create a branch, and get into branch.
+2. Make changes to files, then
+3. `git pull origin master` (optional, but a good idea)
+4. `git add -A` Add ALL changed files to your repository
+5. `git commit -m "some msg"`
+6. `git push origin NameofNewBranch` Push files to this branch.
+7. Go to github, click green buttons.
+8. `git checkout master` (if you want to switch branches)
+
 ## Git Ignore
 - `echo node_modules/ >> .gitignore` (success is seeing a new blank file in directory)
 
 ## File Locations
-Global npm installs location (Windows 7):
+- Global npm installs location (Windows 7):
 C:\Users\turnerj\AppData\Roaming\npm\node_modules
+
+## Login to GitHub
+- `git config --global user.name "Your Name Here"` set your user name for commits
+- `git config --global user.email "your_email@youremail.com"` set email to 'log in'
+- `git config --global user.email` check if I'm logged in (success is returning my email address) Note: do the same thing with 'user.name' to check it.
