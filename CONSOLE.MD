@@ -4,8 +4,8 @@
 - `exit`         Close terminal and quit program.
 - `dir`          List directory files (date/size/name)
 - `ls`           List directory files (names only)
-- `ls *.txt`     List all .txt files in current directory.
-- `cd + folder name`  Go down to that directory.
+- `dir /b/s *.txt`   List all .txt files in current directory.
+- `cd + foldername`  Go down to that directory.
 - `cd..`         Go up one directory.
 - `cd..\..`      Go up two directories.
 - `cd\`          Go to the root of that drive.

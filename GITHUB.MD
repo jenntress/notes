@@ -6,23 +6,25 @@
 - `git pull origin NameOfBranch`
 - `npm run start-dev`
 - new tab, cd into reactMobile `npm run webpack-dev-browser`
-- Login at S19: http://localhost:3000/WebMobility/SearchPage
-- make changes
-- `git pull origin NameOfBranch` optional, but good idea
+- Login at S20: http://localhost:3000/WebMobility/SearchPage
+- MAKE CHANGES, THEN...
 - `git add -u src` OR individual files if only a few
 - `git commit -m "some msg"`
 - `git push origin NameOfBranch`
-- go to github and comment on changes
+- go to github and create pull request
 - update Jira status
 
 ## Other Commands
-- `git add "client/src/component/Home/Home.js"` add ONE file to push up to github
+- `git add "src/component/Home/Home.js"` add ONE file to push up to github
 - `git add -u src` add modified files from the src directory
 - `npm init` creates package.json file (press enter on all questions)
 - `npm install` creates node-modules folder with packages we want to install plus their specific dependencies
 - `--save` saves properties to the dependencies in package.json
 - `--save-dev` saves as dev dependencies which are required to run the app, but also required to develop/build the app.
 - `git clone + URL` Copy someone else's project to your hard drive. You can add a different file name after the URL ` newname` if you want to put it in a differently named directory.
+- `git stash clear` remove all saved stashes from your local machine
+- `git stash list` list all local stashes - success shows "stash@{0}: WIP on..."
+- `git branch` list of all your branches
 
 ## Troubleshooting
 - `npm cache clean` clear cache
@@ -34,16 +36,15 @@
 - `npm list -g` list which packages you have installed globally
 - `npm list -g NameofDependency`check to see if a specific package is gloally installed
 - `git diff` show changes between commits (brings you into "less" prompt - type `q` to quit)
-- `git branch` show a dir list of all your branches
 - `mongo --version` Check to see if a program (in this case mongo) is installed on this device
 
 ## Undo Mistakes
+- `git reset --hard` `git pull` get rid of local changes and update files to match branch
 - `git add -A` `git stash` put the changes you made locally in the "recycle bin" and go back to your last commit. (basically just trash these changes)
 - `git add ...` `git commit --amend` make a change right after you committed (follow propmpts to change or keep the commit message).
 - `git remote rm + name-of-wrong-command` When Cody spelled "origin" wrong we need to remove it
 - `git remote remove origin` When Katie saved her new repository to the wrong location.
 - `git remote add origin + URL` This changes the place (URL/origin) of where to save/push.
-- `git fetch origin && git reset --hard origin/master && git clean -f -d` - turn your local repository into a mirror image of the remote master (note that this destroys any local changes in your current branch)
 - `git reset --soft HEAD~`then `git reset` - Undo latest commit. Removes the latest commit from github and unstages local changes.
 - `npm uninstall -g jshint` remove a global package (in this case jshint)
 
@@ -82,3 +83,12 @@ C:\Users\turnerj\AppData\Roaming\npm\node_modules
 - `git config --global user.name "Your Name Here"` set your user name for commits
 - `git config --global user.email "your_email@youremail.com"` set email to 'log in'
 - `git config --global user.email` check if I'm logged in (success is returning my email address) Note: do the same thing with 'user.name' to check it.
+
+## PUll a single file from a repository???
+git fetch --all
+git checkout origin/master -- <your_file_path>
+git add <your_file_path>
+git commit -m "<your_file_name> updated"
+
+git fetch  
+git checkout origin/master -- path/to/file
